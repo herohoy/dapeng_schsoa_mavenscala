@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today36524.schoolsoa.service" name="ScoreService">
+    <meta>
+        <version>1.0.0</version>
+        <timeout>30000</timeout>
+    </meta>
+    <methods>
+        <method name="findScoreByStudentIdAndLessonName">
+            <doc>
+
+    query student
+</doc>
+            <request name="findScoreByStudentIdAndLessonName_args">
+                <fields>
+                    <field tag="1" name="id" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRING</kind>
+                        </dataType>
+                        <doc></doc>
+                    </field>
+                </fields>
+            </request>
+            <response name="findScoreByStudentIdAndLessonName_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRUCT</kind>
+                            <ref>com.today36524.schoolsoa.bean.Score</ref>
+                        </dataType>
+                        <doc>
+
+    query student
+</doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+        <method name="findScoresByStudentId">
+            <request name="findScoresByStudentId_args">
+                <fields>
+                    <field tag="1" name="studentId" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRING</kind>
+                        </dataType>
+                        <doc></doc>
+                    </field>
+                </fields>
+            </request>
+            <response name="findScoresByStudentId_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>LIST</kind>
+                            <valueType>
+<kind>STRUCT</kind>
+<ref>com.today36524.schoolsoa.bean.Score</ref>
+                            </valueType>
+                        </dataType>
+                        <doc></doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+        <method name="findAllScores">
+            <request name="findAllScores_args">
+                <fields/>
+            </request>
+            <response name="findAllScores_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>LIST</kind>
+                            <valueType>
+<kind>STRUCT</kind>
+<ref>com.today36524.schoolsoa.bean.Score</ref>
+                            </valueType>
+                        </dataType>
+                        <doc></doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+    </methods>
+    <structs>
+        <struct namespace="com.today36524.schoolsoa.bean" name="Score">
+            <fields>
+                <field tag="1" name="studentId" optional="false" privacy="false">
+                    <dataType>
+                        <kind>STRING</kind>
+                    </dataType>
+                </field>
+                <field tag="2" name="lessonName" optional="false" privacy="false">
+                    <dataType>
+                        <kind>STRING</kind>
+                    </dataType>
+                </field>
+                <field tag="3" name="point" optional="false" privacy="false">
+                    <dataType>
+                        <kind>INTEGER</kind>
+                    </dataType>
+                </field>
+            </fields>
+        </struct>
+    </structs>
+    <enums/>
+</service>

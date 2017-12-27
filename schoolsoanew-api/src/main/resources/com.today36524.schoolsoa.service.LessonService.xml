@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="com.today36524.schoolsoa.service" name="LessonService">
+    <meta>
+        <version>1.0.0</version>
+        <timeout>30000</timeout>
+    </meta>
+    <methods>
+        <method name="findLessonByName">
+            <doc>
+
+    query lesson
+</doc>
+            <request name="findLessonByName_args">
+                <fields>
+                    <field tag="1" name="name" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRING</kind>
+                        </dataType>
+                        <doc></doc>
+                    </field>
+                </fields>
+            </request>
+            <response name="findLessonByName_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRUCT</kind>
+                            <ref>com.today36524.schoolsoa.bean.Lesson</ref>
+                        </dataType>
+                        <doc>
+
+    query lesson
+</doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+        <method name="findAllLessons">
+            <request name="findAllLessons_args">
+                <fields/>
+            </request>
+            <response name="findAllLessons_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>LIST</kind>
+                            <valueType>
+<kind>STRUCT</kind>
+<ref>com.today36524.schoolsoa.bean.Lesson</ref>
+                            </valueType>
+                        </dataType>
+                        <doc></doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+    </methods>
+    <structs>
+        <struct namespace="com.today36524.schoolsoa.bean" name="Lesson">
+            <fields>
+                <field tag="1" name="name" optional="false" privacy="false">
+                    <dataType>
+                        <kind>STRING</kind>
+                    </dataType>
+                </field>
+                <field tag="2" name="namecn" optional="true" privacy="false">
+                    <dataType>
+                        <kind>STRING</kind>
+                    </dataType>
+                </field>
+                <field tag="3" name="lessonorder" optional="false" privacy="false">
+                    <dataType>
+                        <kind>INTEGER</kind>
+                    </dataType>
+                </field>
+            </fields>
+        </struct>
+    </structs>
+    <enums/>
+</service>

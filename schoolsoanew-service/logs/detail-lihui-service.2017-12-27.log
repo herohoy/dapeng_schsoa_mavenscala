@@ -1,0 +1,5 @@
+12-27 18:06:44 326 com.isuwang.dapeng.bootstrap.Bootstrap.main() INFO - {dataSource-1} inited
+12-27 18:06:44 355 com.isuwang.dapeng.bootstrap.Bootstrap.main() INFO - {dataSource-1} closed
+12-27 18:14:47 609 com.isuwang.dapeng.bootstrap.Bootstrap.main() INFO - {dataSource-1} inited
+12-27 18:16:11 062 trans-pool-1-thread-2 DEBUG - SQL Preparing: select id,name from bean_school args: List()
+12-27 18:16:11 117 trans-pool-1-thread-2 DEBUG - SQL result: 1

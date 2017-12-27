@@ -1,0 +1,2 @@
+12-27 18:14:59 778 trans-pool-1-thread-1 INFO - DONE /127.0.0.1:36246 /127.0.0.1:9090 1 com.today36524.schoolsoa.service.SchoolService.getServiceMetadata:1.0.0 0000 成功 228 7610 4ms 521ms
+12-27 18:16:11 123 trans-pool-1-thread-2 INFO - DONE /127.0.0.1:36290 /127.0.0.1:9090 1 com.today36524.schoolsoa.service.SchoolService.findAllSchool:1.0.0 0000 成功 187 321 0ms 329ms
