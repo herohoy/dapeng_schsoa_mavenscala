@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="Maven 1" modules="schoolsoanew,schoolsoanew-api,schoolsoanew-service">
+    <profile name="Maven 1" modules="schoolsoanew-api,schoolsoanew-service,schoolsoanew">
       <option name="postfixOps" value="true" />
       <option name="existentials" value="true" />
       <option name="deprecationWarnings" value="true" />

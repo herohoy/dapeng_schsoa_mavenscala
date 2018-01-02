@@ -57,5 +57,5 @@ class SchoolDao {
     * @return 学校数据
     */
   def findSchoolById(id:String):School
-  = findSchoolById(id)
+  = SchoolDao.findSchoolById(id)
 }
