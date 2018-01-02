@@ -13,12 +13,14 @@ class SchoolServiceImpl extends SchoolService{
   query the schoolsoa name
     *
     **/
-  override def findSchoolNameById(id: String): String = SchoolDao.findSchoolById(id).get.name
+  override def findSchoolNameById(id: String): String = SchoolDao.findSchoolById(id).name
 
   /**
     *
     **/
-  override def findSchoolById(id: String): School = SchoolDao.findSchoolById(id).get
+  override def findSchoolById(id: String): School = {
+    SchoolDao.findSchoolById(id)
+  }
 
   /**
     *

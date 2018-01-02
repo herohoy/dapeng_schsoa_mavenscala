@@ -9,7 +9,7 @@ class ClassServiceImpl extends ClassService{
   query class
     *
     **/
-  override def findClassById(id: String): Clazz = ClassDao.findClassById(id).get
+  override def findClassById(id: String): Clazz = ClassDao.findClassById(id)
 
   /**
     *

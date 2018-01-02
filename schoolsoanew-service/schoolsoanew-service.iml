@@ -12,7 +12,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="schoolsoanew-api" />
+    <orderEntry type="library" name="Maven: com.today36524:schoolsoanew-api:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.isuwang:dapeng-remoting-api:1.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.isuwang:dapeng-transaction-api:1.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.3.1" level="project" />

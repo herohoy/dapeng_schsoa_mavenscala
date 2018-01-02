@@ -18,6 +18,8 @@
 
     <bean id="schoolService" class="com.today36524.schoolsoa.service.SchoolServiceImpl"/>
     <soa:service ref="schoolService"/>
+    <bean id="classService" class="com.today36524.schoolsoa.service.ClassServiceImpl"/>
+    <soa:service ref="classService"/>
 
 
     <bean id="slf4j-filter" class="com.alibaba.druid.filter.logging.Slf4jLogFilter">

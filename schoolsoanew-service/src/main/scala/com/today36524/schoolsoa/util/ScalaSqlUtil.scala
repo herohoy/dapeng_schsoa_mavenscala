@@ -5,24 +5,23 @@ import java.util.Properties
 import javax.sql.DataSource
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource
-import com.today36524.schoolsoa.util.ScalaSqlUtil.dataSource
 import org.springframework.context.annotation.{Bean, Configuration}
 import wangzx.scala_commons.sql._
 
 
-
+@deprecated("Please use DruidDataSource instead","1.0.1")
 object ScalaSqlUtil {
 
   val dataSource: DataSource = {
 
     val properties = new Properties()
     val path = Thread.currentThread().getContextClassLoader
-      .getResource("application.properties").getPath //文件要放到resource文件夹下
+      .getResource("config_schoolsoanew.properties").getPath //文件要放到resource文件夹下
     properties.load(new FileInputStream(path))
     val dataSource: MysqlDataSource = new MysqlDataSource
-    dataSource.setURL(properties.getProperty("spring.datasource.url"))
-    dataSource.setUser(properties.getProperty("spring.datasource.username"))
-    dataSource.setPassword(properties.getProperty("spring.datasource.password"))
+    dataSource.setURL(properties.getProperty("DB_CRMDB_URL"))
+    dataSource.setUser(properties.getProperty("DB_CRMDB_USER"))
+    dataSource.setPassword(properties.getProperty("DB_CRMDB_PASSWD"))
 
     dataSource
   }

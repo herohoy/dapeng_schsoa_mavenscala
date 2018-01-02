@@ -6,7 +6,7 @@
 
     <groupId>com.today36524</groupId>
     <artifactId>schoolsoanew</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <modules>
         <module>schoolsoanew-api</module>
         <module>schoolsoanew-service</module>
